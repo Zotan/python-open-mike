@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Python "open mike" events at IRF
+layout: default
 ---
  
 ## Format
@@ -68,6 +68,7 @@ compare. It is OK to prepare all or prepare none.
 - [Real Python Tutorials](https://realpython.com)
 - [The Hitchhiker’s Guide to Python!](https://docs.python-guide.org)
 - [Python 3 Module of the Week](https://pymotw.com/3/)
+- [Daily Programmer reddit](https://www.reddit.com/r/dailyprogrammer)
 
 
 ## Topics ideas for future events
@@ -79,3 +80,7 @@ compare. It is OK to prepare all or prepare none.
 - File I/O
 - `pandas`
 - `itertools`
+- decorators
+- `tornado` vs `bottle` web framework
+- data streaming in Python?
+- utilisation of multiple CPUs (e.g. mpi4py-fft)
