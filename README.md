@@ -1,1 +1,1 @@
-Sources behind http://uit-no.github.io/python-open-mike/.
+Sources behind https://danielk333.github.io/python-open-mike/.

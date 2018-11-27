@@ -2,7 +2,7 @@
 layout: default
 title: Python "open mike" events at IRF
 ---
-
+ 
 ## Format
 
 Eventually it could be a platform where participants show something useful to
