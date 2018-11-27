@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Python "open mike" events at UiT
+title: Python "open mike" events at IRF
 ---
 
 ## Format
 
 Eventually it could be a platform where participants show something useful to
-others. But it will take some time to warm up and until then each event will
-have a theme and we will suggest exercises. Participants can prepare these
-exercises but do not have to.  We go through the exercise and solutions
-together but those who have solved the exercises can present alternative
-solutions which we discuss together.
+others and have creative discussions about programing. But to warm up and get 
+into the mood of hacking each event will have a theme and we will suggest 
+exercises. Participants can prepare these exercises but do not have to. 
+We go through the exercise and solutions together but those who have solved 
+the exercises can present alternative solutions which we discuss together.
 
 At each event we fix the dates for the next event and together we choose a
 theme.
@@ -32,7 +32,7 @@ to discuss, ask questions, and to demo. There are no slides, and there is no lec
 
 ## Exercises
 
-You can email solutions to Radovan Bast (firstname.lastname@uit.no) who will
+You can email solutions to Daniel Kastinen (daniel.kastinen@irf.se) who will
 collect them and make them available (without names) so that you can
 compare. It is OK to prepare all or prepare none.
 
@@ -73,9 +73,9 @@ compare. It is OK to prepare all or prepare none.
 ## Topics ideas for future events
 
 - Context managers
+- TCP/IP
 - Functional programming
 - `collections`
 - File I/O
-- `pygame`
 - `pandas`
-- `tkinter`
+- `itertools`
