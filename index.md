@@ -1,8 +1,9 @@
 ---
-title: Python "open mike" events at IRF
+title: "Python 'open mike' events at IRF"
 layout: default
 ---
- 
+
+
 ## Format
 
 Eventually it could be a platform where participants show something useful to
