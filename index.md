@@ -3,6 +3,8 @@ title: "Python 'open mike' events at IRF"
 layout: default
 ---
 
+![IRF logo](/IRF.jpg)
+
 
 ## Format
 
