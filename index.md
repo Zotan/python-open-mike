@@ -87,3 +87,4 @@ compare. It is OK to prepare all or prepare none.
 - `tornado` vs `bottle` web framework
 - data streaming in Python?
 - utilisation of multiple CPUs (e.g. mpi4py-fft)
+- when to yield
