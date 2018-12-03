@@ -88,3 +88,4 @@ compare. It is OK to prepare all or prepare none.
 - data streaming in Python?
 - utilisation of multiple CPUs (e.g. mpi4py-fft)
 - when to yield
+- @classmethod, @staticmethod and other OOP topics
