@@ -5,6 +5,7 @@ layout: default
 
 ![IRF logo](/IRF.jpg)
 
+RSS Feed for future events: <a href="/python-open-mike/feed.xml"><img src="/python-open-mike/rss-feed-icon.png">RSS</a>
 
 ## Format
 
@@ -41,9 +42,6 @@ compare. It is OK to prepare all or prepare none.
 
 
 ## Next event
-
-
-RSS feed: <a href="/feed.xml">RSS</a>
 
 
 <ul>
