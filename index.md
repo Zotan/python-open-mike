@@ -5,7 +5,7 @@ layout: default
 
 ![IRF logo](/IRF.jpg)
 
-RSS Feed for future events: <a href="/python-open-mike/feed.xml"><img src="/python-open-mike/rss-feed-icon.png">RSS</a>
+RSS Feed for future events: <a href="/python-open-mike/feed.xml"><img style="height: 25px;" src="/python-open-mike/rss-feed-icon.png"></a>
 
 ## Format
 
