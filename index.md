@@ -1,6 +1,7 @@
 ---
 title: "Python 'open mike' events at IRF"
 layout: default
+{% feed_meta %}
 ---
 
 ![IRF logo](/IRF.jpg)
