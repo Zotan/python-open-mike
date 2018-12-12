@@ -1,7 +1,6 @@
 ---
 title: "Python 'open mike' events at IRF"
 layout: default
-{% feed_meta %}
 ---
 
 ![IRF logo](/IRF.jpg)
@@ -42,6 +41,10 @@ compare. It is OK to prepare all or prepare none.
 
 
 ## Next event
+
+
+RSS feed: <a href="/feed.xml">RSS</a>
+
 
 <ul>
   {% for post in site.posts %}
