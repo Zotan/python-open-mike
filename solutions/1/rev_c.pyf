@@ -1,0 +1,21 @@
+! File rev_c.pyf
+python module revc
+interface
+  subroutine reverse1(lst, r, L)
+    intent(c) reverse1
+    intent(c)
+
+    integer, optional, check(len(lst)>=L), depend(lst) :: L=len(lst)
+    integer dimension(L),intent(in) :: lst
+    integer dimension(L),intent(out) :: r
+
+  end subroutine reverse1
+  subroutine reverse2(lst, L)
+    intent(c) reverse2
+    intent(c)
+
+    integer, optional, depend(lst) :: L=len(lst)
+    integer dimension(L) :: lst
+
+  end subroutine reverse2
+end interface
