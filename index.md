@@ -19,6 +19,9 @@ the exercises can present alternative solutions which we discuss together.
 At each event we fix the dates for the next event and together we choose a
 theme.
 
+## Level
+
+These events are intended for **ANY** level of Python programmer.
 
 # What to expect
 
