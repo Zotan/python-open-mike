@@ -11,7 +11,7 @@ if __name__ == '__main__':
                  ('data/2019-02-12-skattesats-2-kommun.csv', 'windows-1252', ',')]
 
     for fn, encoding, delimiter in datafiles:
-        with open(fn, 'r', encoding=encoding) as fd:
+        with open(fn, 'r', encoding=encoding, newline='') as fd:
             reader = csv.reader(fd, delimiter=delimiter)
 
             for nr, row in enumerate(reader):
@@ -19,7 +19,7 @@ if __name__ == '__main__':
                     header += row[1:]
                     continue
                 region = row[0]
-                data = [float(value.replace(',', '.')) for value in row[1:]]
+                data = [float(column.replace(',', '.')) for column in row[1:]]
                 if region not in regions:
                     regions[region] = []
                 regions[region] += data
