@@ -10,14 +10,14 @@ status: "next"
 
 # Agenda
 
-Interacting with the file-system trough Python. Creating and deleting files and folders, finding files.
+Interacting with the file-system trough Python. Creating and deleting files and folders. Finding and opening files.
 
 
 # Problems
 
 In [the data folder](https://github.com/danielk333/python-open-mike/tree/gh-pages/data) there is a folder structure that looks like:
 
-.. code::
+.. code-block::
 
     big_data/
     |--conf.py
@@ -39,21 +39,18 @@ The data is Bigfoot sightings in USA, downloaded with [bfro-download](https://gi
 
 The **conf.py** contains parameters useful for interpreting the data.
 
+The **.txt** files contain one sighting report each (1 line).
+
 ## The task is to:
 
-1. Store the full **data_folder** path in a variable without explicitly writing it in the code.
-2. Create a list of all **reports.csv** file paths (full paths).
-3. Create a list of all states there is data for (just state names, no slashes or paths).
-4. Import the *classes* variable from **conf.py** into the script.
-5. List all files in the **comments** folder.
-6. Create a folder called **wow** in the **big_data/** folder.
-7. Move report **5.txt** from **big_data/Indiana** to the **big_data/wow** folder.
+1. Create a list of all states there is data for.
+2. Create a folder called **wow** in the **big_data/** folder. If the directory exists, make sure it is empty.
+3. *Copy* (do not move) all **.txt** files that contains the word "howl" to the **big_data/wow** folder.
 
 ## Optional cool stuff:
 
-8. Use the csv-reading from last event to read all different states data.
-9. Merge the data into a single table.
-10. Find the most "Bigfoot" state in USA.
+4. Use the csv-reading from last event to read all different states data.
+5. Sort states according to number of sightings, what is the most "Bigfoot" state in USA?
 
 ## Hints:
 
