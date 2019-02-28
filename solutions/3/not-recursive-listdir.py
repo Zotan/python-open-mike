@@ -44,6 +44,7 @@ def clear_directory(path):
 
     while len(paths_to_delete) > 0:
         path = paths_to_delete.pop()
+
         for entry in [e for e in path.iterdir()]:
             if entry.is_dir():
                 entry.rmdir()
@@ -52,7 +53,7 @@ def clear_directory(path):
 
 
 def find_howls(basepath):
-    howl_pattern = re.compile(r'(^|[^a-zA-Z])howl(ing|ed|s)?[^a-zA-Z]')
+    howl_pattern = re.compile(r'[^a-z]howl(ing|ed|s)?[^a-z]', re.IGNORECASE)
 
     matches = []
 
@@ -61,7 +62,7 @@ def find_howls(basepath):
         if howl_pattern.search(content) is not None:
             matches.append(path)
 
-    print(f'There where {len(matches)} howls.')
+    print('There where {} howls.'.format(len(matches)))
 
     return matches
 
