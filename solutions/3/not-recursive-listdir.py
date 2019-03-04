@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import csv
 import os
 import re
 import sys
@@ -67,6 +68,41 @@ def find_howls(basepath):
     return matches
 
 
+def detailed_observations(basepath):
+    observations = {}
+    classifications = set()
+
+    for path in collect_files(basepath, ext='csv'):
+        with open(path, 'r', encoding='utf-8', newline='') as fd:
+            reader = csv.reader(fd)
+
+            for idx, line in enumerate(reader):
+                if idx == 0:
+                    continue
+
+                _, fileidx, _, county, state, _, lat, lon, date, number, classification, geohash = line
+
+                if state not in observations:
+                    observations[state] = {}
+                if classification.startswith('Class '):
+                    classification = classification[-1:]
+                if classification not in observations[state]:
+                    observations[state][classification] = 0
+                classifications.add(classification)
+                observations[state][classification] += 1
+
+    sorted_by_obs = [state for state in observations.keys()]
+    sorted_by_obs.sort(key=lambda e: sum([amount for amount in observations[e].values()]), reverse=True)
+    print('States with the most observations:',
+          ', '.join(sorted_by_obs[:3]))
+
+    for classification in sorted(classifications):
+        sorted_by_class = [state for state in observations.keys()]
+        sorted_by_class.sort(key=lambda e: observations[e].get(classification, 0), reverse=True)
+        print('States with the most class {} observations:'.format(classification),
+              ', '.join(sorted_by_class[:3]))
+
+
 def main(basepath):
     output = basepath / "wow"
 
@@ -76,6 +112,8 @@ def main(basepath):
     for path in find_howls(basepath):
         targetfn = output.joinpath(path.parent.name + '-' + path.name)
         targetfn.write_text(path.read_text())
+
+    detailed_observations(basepath)
 
 
 if __name__ == '__main__':
