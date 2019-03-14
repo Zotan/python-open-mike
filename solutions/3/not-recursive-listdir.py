@@ -54,6 +54,7 @@ def clear_directory(path):
 
 
 def find_howls(basepath):
+    # howl, howling, howled, howls -- can't read it? go here: https://regexcrossword.com/
     howl_pattern = re.compile(r'[^a-z]howl(ing|ed|s)?[^a-z]', re.IGNORECASE)
 
     matches = []
