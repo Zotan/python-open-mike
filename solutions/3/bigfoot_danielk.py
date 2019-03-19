@@ -62,11 +62,11 @@ if os.path.exists(wow_dir):
 else:
     os.mkdir(wow_dir)
 
-for txt_file in txt_files:
+for txind, txt_file in enumerate(txt_files):
     with open(txt_file, 'r') as f:
         sighting = f.readline()
 
         if 'howl' in sighting.split(' '):
             print(f'Howl detected in {txt_file} (moving to wow dir), report {len(sighting)} characters long.')
-            shutil.copy2(txt_file, wow_dir + os.sep + txt_file.split(os.sep)[-1])
+            shutil.copy2(txt_file, wow_dir + os.sep + f'{txind}_' + txt_file.split(os.sep)[-1])
 
