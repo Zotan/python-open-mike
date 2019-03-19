@@ -4,7 +4,7 @@ title: "2019-03-19: Filesystem"
 time: "14:30"
 room: "Aniara"
 author: "the organizers"
-status: "next"
+status: "past"
 ---
 
 
